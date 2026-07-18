@@ -1,6 +1,6 @@
 // Login and signup interactions
 
-// Login demonstration function
+// Login form validation and redirect
 var loginForm = document.getElementById("loginForm");
 var authMessage = document.getElementById("authMessage");
 
@@ -18,7 +18,7 @@ if (loginForm) {
             return;
         }
 
-        authMessage.textContent = "Demo login successful.";
+        authMessage.textContent = "Login successful.";
         authMessage.className = "form-message success";
 
         if (accountType === "admin") {

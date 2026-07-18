@@ -10,7 +10,7 @@ memberLinks.forEach(function(link) {
     }
 });
 
-// Member button demonstration messages
+// Member button messages
 var memberButtons = document.querySelectorAll("button");
 
 memberButtons.forEach(function(button) {
@@ -35,7 +35,7 @@ memberButtons.forEach(function(button) {
     });
 });
 
-// Song search demonstration
+// Song search input
 var songSearch = document.getElementById("songSearch");
 
 if (songSearch) {

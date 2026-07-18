@@ -10,7 +10,7 @@ adminLinks.forEach(function(link) {
     }
 });
 
-// Admin button demonstration messages
+// Admin button messages
 var adminButtons = document.querySelectorAll("button");
 
 adminButtons.forEach(function(button) {
