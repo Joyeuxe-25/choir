@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir Management System - Login</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Choir Management System</h1>
+            <nav>
+                <a href="../html/home.html"><img src="../assets/icons/home.svg" alt="" class="nav-icon">Home</a>
+                <a href="../html/choirs.html"><img src="../assets/icons/choir-users.svg" alt="" class="nav-icon">Choirs</a>
+                <a href="../html/apply.html"><img src="../assets/icons/apply.svg" alt="" class="nav-icon">Apply</a>
+                <a href="login.html"><img src="../assets/icons/login.svg" alt="" class="nav-icon">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login form -->
+    <main class="auth-section">
+        <div class="auth-card">
+            <img src="../assets/icons/login.svg" alt="" class="auth-icon">
+            <h2>Login</h2>
+            <p class="auth-note">This is a demonstration login for the school project.</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail"><img src="../assets/icons/email.svg" alt="" class="form-icon">Email</label>
+                    <input type="email" id="loginEmail" name="loginEmail">
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword"><img src="../assets/icons/login.svg" alt="" class="form-icon">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword">
+                </div>
+
+                <div class="form-group">
+                    <label for="accountType"><img src="../assets/icons/user.svg" alt="" class="form-icon">Account Type</label>
+                    <select id="accountType" name="accountType">
+                        <option value="admin">Admin</option>
+                        <option value="member">Member</option>
+                    </select>
+                </div>
+
+                <p id="authMessage" class="form-message"></p>
+
+                <button class="button auth-button" type="submit">Login</button>
+            </form>
+
+            <p class="auth-switch">Do not have an account? <a href="signup.html">Create Account</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>Contact information will be added by the choir office.</p>
+            <p>&copy; 2026 Choir Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir Management System - Rehearsals</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div class="member-layout">
+        <aside class="member-sidebar">
+            <h1>Choir Management System</h1>
+            <p>Member Area</p>
+            <nav class="member-nav">
+                <a href="dashboard.html"><img src="../assets/icons/dashboard.svg" alt="" class="member-nav-icon">Dashboard</a>
+                <a href="songs.html"><img src="../assets/icons/music.svg" alt="" class="member-nav-icon">My Songs</a>
+                <a href="rehearsals.html"><img src="../assets/icons/calendar-events.svg" alt="" class="member-nav-icon">Rehearsals</a>
+                <a href="events.html"><img src="../assets/icons/calendar-events.svg" alt="" class="member-nav-icon">Events</a>
+                <a href="profile.html"><img src="../assets/icons/profile.svg" alt="" class="member-nav-icon">Profile</a>
+                <a href="../auth/login.html"><img src="../assets/icons/logout.svg" alt="" class="member-nav-icon">Logout</a>
+            </nav>
+        </aside>
+
+        <div class="member-main">
+            <header class="member-header">
+                <div>
+                    <p class="member-label">Member Panel</p>
+                    <h2>Rehearsals</h2>
+                </div>
+            </header>
+
+            <main class="member-content">                <section class="member-card wide-card">
+                    <h3>Rehearsal Information</h3>
+                    <p>Use this page to view rehearsal details and notes.</p>
+                    <div class="info-list">
+                        <div class="info-row"><strong>Date area:</strong><span></span></div>
+                        <div class="info-row"><strong>Time area:</strong><span></span></div>
+                        <div class="info-row"><strong>Location area:</strong><span></span></div>
+                        <div class="info-row"><strong>Notes area:</strong><span></span></div>
+                    </div>
+                    <p class="empty-state">No rehearsal information available.</p>
+                </section>            </main>
+        </div>
+    </div>
+
+    <script src="../js/member.js"></script>
+</body>
+</html>

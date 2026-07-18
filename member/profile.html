@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir Management System - Profile</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div class="member-layout">
+        <aside class="member-sidebar">
+            <h1>Choir Management System</h1>
+            <p>Member Area</p>
+            <nav class="member-nav">
+                <a href="dashboard.html"><img src="../assets/icons/dashboard.svg" alt="" class="member-nav-icon">Dashboard</a>
+                <a href="songs.html"><img src="../assets/icons/music.svg" alt="" class="member-nav-icon">My Songs</a>
+                <a href="rehearsals.html"><img src="../assets/icons/calendar-events.svg" alt="" class="member-nav-icon">Rehearsals</a>
+                <a href="events.html"><img src="../assets/icons/calendar-events.svg" alt="" class="member-nav-icon">Events</a>
+                <a href="profile.html"><img src="../assets/icons/profile.svg" alt="" class="member-nav-icon">Profile</a>
+                <a href="../auth/login.html"><img src="../assets/icons/logout.svg" alt="" class="member-nav-icon">Logout</a>
+            </nav>
+        </aside>
+
+        <div class="member-main">
+            <header class="member-header">
+                <div>
+                    <p class="member-label">Member Panel</p>
+                    <h2>Profile</h2>
+                </div>
+            </header>
+
+            <main class="member-content">                <section class="member-card profile-card">
+                    <div class="profile-image-area">
+                        <img src="../assets/icons/profile.svg" alt="" class="profile-icon">
+                        <p>Profile image area</p>
+                    </div>
+
+                    <form class="member-form">
+                        <div class="form-group">
+                            <label for="memberName">Name</label>
+                            <input type="text" id="memberName" name="memberName" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="memberEmail">Email</label>
+                            <input type="email" id="memberEmail" name="memberEmail" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="memberPhone">Phone</label>
+                            <input type="tel" id="memberPhone" name="memberPhone" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="memberChoir">Choir Information</label>
+                            <input type="text" id="memberChoir" name="memberChoir" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="memberVoice">Voice Type</label>
+                            <input type="text" id="memberVoice" name="memberVoice" placeholder="">
+                        </div>
+                        <button type="button" class="member-button" data-message="Profile update selected. No information was saved.">Update Profile</button>
+                    </form>
+                </section>            </main>
+        </div>
+    </div>
+
+    <script src="../js/member.js"></script>
+</body>
+</html>

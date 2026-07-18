@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir Management System - Songs</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <h1>Choir Management System</h1>
+            <p>Admin Area</p>
+            <nav class="admin-nav">
+                <a href="dashboard.html"><img src="../assets/icons/dashboard.svg" alt="" class="admin-nav-icon">Dashboard</a>
+                <a href="applications.html"><img src="../assets/icons/apply.svg" alt="" class="admin-nav-icon">Applications</a>
+                <a href="members.html"><img src="../assets/icons/members.svg" alt="" class="admin-nav-icon">Members</a>
+                <a href="attendance.html"><img src="../assets/icons/attendance.svg" alt="" class="admin-nav-icon">Attendance</a>
+                <a href="songs.html"><img src="../assets/icons/songs.svg" alt="" class="admin-nav-icon">Songs</a>
+                <a href="rehearsals.html"><img src="../assets/icons/calendar-events.svg" alt="" class="admin-nav-icon">Rehearsals</a>
+                <a href="events.html"><img src="../assets/icons/calendar-events.svg" alt="" class="admin-nav-icon">Events</a>
+                <a href="meetings.html"><img src="../assets/icons/meetings.svg" alt="" class="admin-nav-icon">Meetings</a>
+                <a href="profile.html"><img src="../assets/icons/profile.svg" alt="" class="admin-nav-icon">Profile</a>
+                <a href="../auth/login.html"><img src="../assets/icons/logout.svg" alt="" class="admin-nav-icon">Logout</a>
+            </nav>
+        </aside>
+
+        <div class="admin-main">
+            <header class="admin-header">
+                <div>
+                    <p class="admin-label">Admin Panel</p>
+                    <h2>Songs</h2>
+                </div>
+            </header>
+
+            <main class="admin-content">                <section class="admin-card wide-card">
+                    <div class="page-actions">
+                        <div>
+                            <h3>Manage Songs</h3>
+                            <p>Use this form layout to manage choir song information.</p>
+                        </div>
+                        <button type="button" class="admin-button" data-message="Song form action selected.">Add Song</button>
+                    </div>
+                    <form class="admin-form">
+                        <div class="form-group">
+                            <label for="songTitle">Song Title</label>
+                            <input type="text" id="songTitle" name="songTitle">
+                        </div>
+                        <div class="form-group">
+                            <label for="lyrics">Lyrics Section</label>
+                            <textarea id="lyrics" name="lyrics" rows="6"></textarea>
+                        </div>
+                        <div class="upload-box">
+                            <img src="../assets/icons/upload.svg" alt="" class="admin-card-icon">
+                            <p>Audio upload area</p>
+                        </div>
+                    </form>
+                </section>            </main>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

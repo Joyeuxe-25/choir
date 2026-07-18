@@ -1,33 +1,28 @@
-// Highlight the active navigation link
+// General website functions
+
+// Current page navigation highlight
 var currentPage = window.location.pathname.split("/").pop();
 var navLinks = document.querySelectorAll("nav a");
 
 navLinks.forEach(function(link) {
-    if (link.getAttribute("href") === currentPage) {
+    var linkPage = link.getAttribute("href").split("/").pop();
+
+    if (linkPage === currentPage) {
         link.classList.add("active");
     }
 });
 
-// Show a message when a choir is selected
-var choirSelect = document.getElementById("choir");
-var choirMessage = document.getElementById("choirMessage");
+// Mobile navigation interaction, used only if a menu button exists on a page
+var menuButton = document.getElementById("menuButton");
+var mainNavigation = document.querySelector("nav");
 
-var choirMessages = {
-    youth: "Great choice! Youth Choir is perfect for young singers.",
-    adult: "Adult Choir is great for mature singers who love worship music.",
-    children: "Children Choir helps young children grow through music.",
-    worship: "Worship Team is for singers who want to lead praise and worship.",
-    school: "School Choir is good for students who enjoy singing together."
-};
-
-if (choirSelect) {
-    choirSelect.addEventListener("change", function() {
-        var selectedChoir = choirSelect.value;
-        choirMessage.textContent = choirMessages[selectedChoir] || "";
+if (menuButton && mainNavigation) {
+    menuButton.addEventListener("click", function() {
+        mainNavigation.classList.toggle("open");
     });
 }
 
-// Validate the application form
+// Application form validation
 var applicationForm = document.getElementById("applicationForm");
 var formMessage = document.getElementById("formMessage");
 
@@ -42,13 +37,13 @@ if (applicationForm) {
         var choir = document.getElementById("choir").value;
 
         if (fullName === "" || email === "" || phone === "" || age === "" || choir === "") {
-            formMessage.textContent = "Please fill in Full Name, Email, Phone Number, Age, and Choir.";
+            formMessage.textContent = "Please complete all required fields.";
             formMessage.className = "form-message error";
-        } else {
-            formMessage.textContent = "Thank you for applying. We will contact you soon.";
-            formMessage.className = "form-message success";
-            applicationForm.reset();
-            choirMessage.textContent = "";
+            return;
         }
+
+        formMessage.textContent = "Application submitted successfully.";
+        formMessage.className = "form-message success";
+        applicationForm.reset();
     });
 }

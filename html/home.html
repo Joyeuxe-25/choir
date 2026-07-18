@@ -13,16 +13,17 @@
         <div class="container header-content">
             <h1>Choir Management System</h1>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="choirs.html">Choirs</a>
-                <a href="apply.html">Apply</a>
+                <a href="home.html"><img src="../assets/icons/home.svg" alt="" class="nav-icon">Home</a>
+                <a href="choirs.html"><img src="../assets/icons/choir-users.svg" alt="" class="nav-icon">Choirs</a>
+                <a href="apply.html"><img src="../assets/icons/apply.svg" alt="" class="nav-icon">Apply</a>
+                <a href="../auth/login.html"><img src="../assets/icons/login.svg" alt="" class="nav-icon">Login</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero banner -->
+    <!-- Hero section -->
     <section class="hero">
-        <img src="../assets/home-banner.png" alt="Choir members singing">
+        <img src="../assets/images/home-banner.png" alt="Choir members singing together">
         <div class="hero-text">
             <h2>Welcome to Our Choir</h2>
             <p>Singing together, growing together in faith and harmony.</p>
@@ -32,40 +33,46 @@
 
     <!-- About section -->
     <section class="section">
-        <div class="container narrow">
-            <h2>About Our Choir</h2>
-            <p>
-                The Choir Management System helps people learn about our choir groups and apply to join
-                the group that suits them best. It shares simple choir information, rehearsal times,
-                and application details.
-            </p>
+        <div class="container about-layout">
+            <div>
+                <h2 class="icon-heading"><img src="../assets/icons/church.svg" alt="" class="section-icon">About Our Choir</h2>
+                <p>
+                    Our choir is a group of people who enjoy singing and serving through music.
+                    The choir helps members grow in confidence, teamwork, and musical ability.
+                </p>
+                <p>
+                    The purpose of the choir is to bring people together, support worship, and
+                    build a friendly community where singers can learn from one another.
+                </p>
+            </div>
+            <img src="../assets/images/worship-team.png" alt="Choir group practicing music" class="about-image">
         </div>
     </section>
 
     <!-- Choir preview section -->
     <section class="section light-section">
         <div class="container">
-            <h2 class="center-text">Choir Groups Preview</h2>
+            <h2 class="center-text icon-heading centered-heading"><img src="../assets/icons/music.svg" alt="" class="section-icon">Choir Groups Preview</h2>
             <div class="card-row">
                 <div class="card">
-                    <img src="../assets/youth-choir.png" alt="Youth Choir" class="card-image">
-                    <h3>Youth Choir</h3>
-                    <p>For young singers who enjoy worship music and group singing.</p>
-                    <a class="text-link" href="choirs.html">View Choirs</a>
+                    <img src="../assets/images/youth-choir.png" alt="Youth Choir singers" class="card-image">
+                    <h3 class="card-title"><img src="../assets/icons/youth-choir.svg" alt="" class="card-icon">Youth Choir</h3>
+                    <p>For young singers who enjoy worship music, teamwork, and group singing.</p>
+                    <a class="button small-button" href="choirs.html">View Choirs</a>
                 </div>
 
                 <div class="card">
-                    <img src="../assets/adult-choir.png" alt="Adult Choir" class="card-image">
-                    <h3>Adult Choir</h3>
-                    <p>For adults who want to lead songs during services and events.</p>
-                    <a class="text-link" href="choirs.html">View Choirs</a>
+                    <img src="../assets/images/adult-choir.png" alt="Adult Choir singers" class="card-image">
+                    <h3 class="card-title"><img src="../assets/icons/adult-choir.svg" alt="" class="card-icon">Adult Choir</h3>
+                    <p>For adult singers who want to serve and grow through choir music.</p>
+                    <a class="button small-button" href="choirs.html">View Choirs</a>
                 </div>
 
                 <div class="card">
-                    <img src="../assets/children-choir.png" alt="Children Choir" class="card-image">
-                    <h3>Children Choir</h3>
+                    <img src="../assets/images/children-choir.png" alt="Children Choir singers" class="card-image">
+                    <h3 class="card-title"><img src="../assets/icons/children-choir.svg" alt="" class="card-icon">Children Choir</h3>
                     <p>For children who love music and want to learn simple choir songs.</p>
-                    <a class="text-link" href="choirs.html">View Choirs</a>
+                    <a class="button small-button" href="choirs.html">View Choirs</a>
                 </div>
             </div>
         </div>
@@ -75,38 +82,47 @@
     <section class="section">
         <div class="container">
             <h2 class="center-text">Why Join Us?</h2>
-            <div class="card-row">
-                <div class="card">
-                    <h3>Improve Your Voice</h3>
-                    <p>Practice regularly and learn from other singers.</p>
+            <div class="benefit-grid">
+                <div class="benefit-box">
+                    <img src="../assets/icons/microphone.svg" alt="" class="benefit-icon">
+                    <h3>Improve Singing Skills</h3>
+                    <p>Practice regularly and learn how to sing with others.</p>
                 </div>
 
-                <div class="card">
-                    <h3>Serve the Community</h3>
-                    <p>Use music to encourage people during worship and events.</p>
+                <div class="benefit-box">
+                    <img src="../assets/icons/music.svg" alt="" class="benefit-icon">
+                    <h3>Serve Through Music</h3>
+                    <p>Use your voice to support worship and encourage the community.</p>
                 </div>
 
-                <div class="card">
-                    <h3>Make Friends</h3>
-                    <p>Meet people who enjoy singing and teamwork.</p>
+                <div class="benefit-box">
+                    <img src="../assets/icons/community.svg" alt="" class="benefit-icon">
+                    <h3>Meet Other Singers</h3>
+                    <p>Join a friendly group of people who enjoy choir music.</p>
+                </div>
+
+                <div class="benefit-box">
+                    <img src="../assets/icons/calendar-events.svg" alt="" class="benefit-icon">
+                    <h3>Join Choir Activities</h3>
+                    <p>Take part in rehearsals, music practice, and choir programs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Apply button section -->
+    <!-- Call to action section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Join a Choir?</h2>
-            <p>Choose your choir group and fill out the simple application form.</p>
-            <a class="button button-light" href="apply.html">Start Application</a>
+            <h2>Ready to join our choir?</h2>
+            <p>Choose a choir group and complete the simple application form.</p>
+            <a class="button button-light" href="apply.html">Apply Now</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>Contact us: choir@church.com | +250 788 322 557</p>
+            <p>Contact information will be added by the choir office.</p>
             <p>&copy; 2026 Choir Management System. All rights reserved.</p>
         </div>
     </footer>

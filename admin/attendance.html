@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir Management System - Attendance</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <h1>Choir Management System</h1>
+            <p>Admin Area</p>
+            <nav class="admin-nav">
+                <a href="dashboard.html"><img src="../assets/icons/dashboard.svg" alt="" class="admin-nav-icon">Dashboard</a>
+                <a href="applications.html"><img src="../assets/icons/apply.svg" alt="" class="admin-nav-icon">Applications</a>
+                <a href="members.html"><img src="../assets/icons/members.svg" alt="" class="admin-nav-icon">Members</a>
+                <a href="attendance.html"><img src="../assets/icons/attendance.svg" alt="" class="admin-nav-icon">Attendance</a>
+                <a href="songs.html"><img src="../assets/icons/songs.svg" alt="" class="admin-nav-icon">Songs</a>
+                <a href="rehearsals.html"><img src="../assets/icons/calendar-events.svg" alt="" class="admin-nav-icon">Rehearsals</a>
+                <a href="events.html"><img src="../assets/icons/calendar-events.svg" alt="" class="admin-nav-icon">Events</a>
+                <a href="meetings.html"><img src="../assets/icons/meetings.svg" alt="" class="admin-nav-icon">Meetings</a>
+                <a href="profile.html"><img src="../assets/icons/profile.svg" alt="" class="admin-nav-icon">Profile</a>
+                <a href="../auth/login.html"><img src="../assets/icons/logout.svg" alt="" class="admin-nav-icon">Logout</a>
+            </nav>
+        </aside>
+
+        <div class="admin-main">
+            <header class="admin-header">
+                <div>
+                    <p class="admin-label">Admin Panel</p>
+                    <h2>Attendance</h2>
+                </div>
+            </header>
+
+            <main class="admin-content">                <section class="admin-card wide-card">
+                    <h3>Record Attendance</h3>
+                    <p>Select the choir, date, and activity, then mark attendance in the table.</p>
+                    <form class="admin-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="choir">Select Choir</label>
+                                <select id="choir" name="choir">
+                                    <option value="">Choose choir</option>
+                                    <option value="youth">Youth Choir</option>
+                                    <option value="adult">Adult Choir</option>
+                                    <option value="children">Children Choir</option>
+                                    <option value="worship">Worship Team</option>
+                                    <option value="school">School Choir</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Select Date</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="activity">Select Activity</label>
+                                <select id="activity" name="activity">
+                                    <option value="">Choose activity</option>
+                                    <option value="rehearsal">Rehearsal</option>
+                                    <option value="event">Event</option>
+                                    <option value="meeting">Meeting</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Member Name</th>
+                                    <th>Present</th>
+                                    <th>Absent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" class="empty-cell">No members available for attendance yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button type="button" class="admin-button" data-message="Attendance recorded.">Save Attendance</button>
+                </section>            </main>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

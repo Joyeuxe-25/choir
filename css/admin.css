@@ -1,0 +1,253 @@
+/* Admin layout */
+.admin-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    background-color: #f4f7f9;
+}
+
+.admin-sidebar {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 24px 18px;
+}
+
+.admin-sidebar h1 {
+    font-size: 22px;
+    margin: 0 0 8px;
+}
+
+.admin-sidebar p {
+    margin: 0 0 24px;
+    color: #d9e7f3;
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 11px 12px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+    background-color: #2f9e44;
+}
+
+.admin-nav-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.admin-main {
+    min-width: 0;
+}
+
+.admin-header {
+    background-color: white;
+    border-bottom: 1px solid #d8e1e8;
+    padding: 22px 32px;
+}
+
+.admin-label {
+    color: #2f80c8;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.admin-header h2 {
+    color: #1f3a5f;
+    margin: 0;
+}
+
+.admin-content {
+    padding: 32px;
+}
+
+.admin-card {
+    background-color: white;
+    border: 1px solid #d8e1e8;
+    border-radius: 6px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.wide-card {
+    margin-bottom: 24px;
+}
+
+.admin-card h3 {
+    color: #1f3a5f;
+    margin-top: 0;
+}
+
+.admin-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.link-card {
+    color: #1f3a5f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+}
+
+.link-card:hover {
+    border-color: #2f9e44;
+}
+
+.admin-card-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.page-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 18px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #d8e1e8;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #eaf1f7;
+    color: #1f3a5f;
+}
+
+.empty-cell {
+    text-align: center;
+    color: #666666;
+    font-style: italic;
+}
+
+.admin-form {
+    margin-top: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.admin-button {
+    display: inline-block;
+    background-color: #2f80c8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin-button:hover {
+    background-color: #256aa7;
+}
+
+.success-button {
+    background-color: #2f9e44;
+}
+
+.success-button:hover {
+    background-color: #267f37;
+}
+
+.danger-button {
+    background-color: #c0392b;
+}
+
+.danger-button:hover {
+    background-color: #992d22;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.upload-box {
+    border: 2px dashed #b9c6d1;
+    border-radius: 6px;
+    padding: 28px;
+    text-align: center;
+    background-color: #f4f7f9;
+}
+
+@media (max-width: 900px) {
+    .admin-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-sidebar {
+        position: static;
+    }
+
+    .admin-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-card-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-actions {
+        display: block;
+    }
+
+    .page-actions .admin-button {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-content,
+    .admin-header {
+        padding: 20px;
+    }
+
+    .admin-nav {
+        grid-template-columns: 1fr;
+    }
+}

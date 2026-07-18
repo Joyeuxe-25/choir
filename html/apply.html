@@ -13,19 +13,20 @@
         <div class="container header-content">
             <h1>Choir Management System</h1>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="choirs.html">Choirs</a>
-                <a href="apply.html">Apply</a>
+                <a href="home.html"><img src="../assets/icons/home.svg" alt="" class="nav-icon">Home</a>
+                <a href="choirs.html"><img src="../assets/icons/choir-users.svg" alt="" class="nav-icon">Choirs</a>
+                <a href="apply.html"><img src="../assets/icons/apply.svg" alt="" class="nav-icon">Apply</a>
+                <a href="../auth/login.html"><img src="../assets/icons/login.svg" alt="" class="nav-icon">Login</a>
             </nav>
         </div>
     </header>
 
     <!-- Apply banner -->
     <section class="hero small-hero">
-        <img src="../assets/apply-banner.png" alt="Choir application banner">
+        <img src="../assets/images/apply-banner.png" alt="Choir application banner">
         <div class="hero-text">
             <h2>Choir Application Form</h2>
-            <p>Fill out the form below to apply for a choir group.</p>
+            <p>This form is for interface demonstration only. It does not save information.</p>
         </div>
     </section>
 
@@ -35,20 +36,20 @@
             <form class="application-form" id="applicationForm">
 
                 <!-- Personal information -->
-                <h2>Personal Information</h2>
+                <h2 class="icon-heading"><img src="../assets/icons/user.svg" alt="" class="section-icon">Personal Information</h2>
 
                 <div class="form-group">
-                    <label for="fullname">Full Name</label>
+                    <label for="fullname"><img src="../assets/icons/user.svg" alt="" class="form-icon">Full Name</label>
                     <input type="text" id="fullname" name="fullname">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"><img src="../assets/icons/email.svg" alt="" class="form-icon">Email</label>
                     <input type="email" id="email" name="email">
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone"><img src="../assets/icons/phone.svg" alt="" class="form-icon">Phone Number</label>
                     <input type="tel" id="phone" name="phone">
                 </div>
 
@@ -66,10 +67,10 @@
                 </div>
 
                 <!-- Choir information -->
-                <h2>Choir Information</h2>
+                <h2 class="icon-heading"><img src="../assets/icons/form-application.svg" alt="" class="section-icon">Choir Information</h2>
 
                 <div class="form-group">
-                    <label for="choir">Select Choir You Want to Join</label>
+                    <label for="choir"><img src="../assets/icons/choir-users.svg" alt="" class="form-icon">Choir Selection</label>
                     <select id="choir" name="choir">
                         <option value="">Choose a choir</option>
                         <option value="youth">Youth Choir</option>
@@ -78,11 +79,10 @@
                         <option value="worship">Worship Team</option>
                         <option value="school">School Choir</option>
                     </select>
-                    <p id="choirMessage" class="help-message"></p>
                 </div>
 
                 <div class="form-group">
-                    <label for="voice">Voice Type</label>
+                    <label for="voice"><img src="../assets/icons/microphone.svg" alt="" class="form-icon">Voice Type</label>
                     <select id="voice" name="voice">
                         <option value="">Choose voice type</option>
                         <option value="soprano">Soprano</option>
@@ -103,12 +103,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="reason">Why do you want to join?</label>
+                    <label for="reason"><img src="../assets/icons/apply.svg" alt="" class="form-icon">Reason for Joining</label>
                     <textarea id="reason" name="reason" rows="4"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Available Days for Rehearsal</label>
+                    <label><img src="../assets/icons/calendar-events.svg" alt="" class="form-icon">Available Rehearsal Days</label>
                     <div class="option-group">
                         <label><input type="checkbox" name="days" value="monday"> Monday</label>
                         <label><input type="checkbox" name="days" value="wednesday"> Wednesday</label>
@@ -131,7 +131,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>Contact us: choir@church.com | +250 788 322 557</p>
+            <p>Contact information will be added by the choir office.</p>
             <p>&copy; 2026 Choir Management System. All rights reserved.</p>
         </div>
     </footer>
